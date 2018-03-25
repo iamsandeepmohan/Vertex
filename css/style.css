@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 15px/1.4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.button {
+    color: #fff;
+    border-radius: 0;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: all .3s ease-in;
+
+}
+
+.button:hover {
+    color: #40a8f5;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section {
+    padding: 60px 0px;
+}
+
+section:nth-of-type(2n +2) {
+    background: #f5f5f5;
+}
+
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2::after {
+    content: " ";
+    width: 80px;
+    text-align: center;
+    background-color: #40a8f5;
+    height: 2px;
+    display: block;
+    margin: 30px auto 50px;
+}
+
+.btn-gen {
+    color: #40a8f5;
+    display: inline-block;
+    border-radius: 0;
+    border: 2px solid #40a8f5;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    transition: all .3s ease-in;
+}
+
+.btn-gen:hover {
+    color: #fff;
+    background-color: #40a8f5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.icon {
+    color: #40a8f5;
+}
+
+
+
+/*Header styles
+------------------------------------*/
+
+nav {
+    transition: all .5s ease-in;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:visited {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #40a8f5;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #40a8f5;
+}
+
+.mydark {
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:visited {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+@media (max-width:990px) {
+    .mydark1 {
+        background-color: rgba(0, 0, 0, 0.7)
+    }
+}
+
+/*Header styles
+------------------------------------*/
+
+#home {
+    padding: 35vh 0 30vh;
+    color: #fff;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg) fixed 50% no-repeat;
+    background-size: cover;
+}
+
+#home h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    animation-delay: .8s;
+}
+
+#home a {
+    animation-delay: 1.2s;
+}
+
+#home span {
+    color: #40a8f5;
+}
+
+#home .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*Services Styles
+----------------------------------*/
+
+.services h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+
+/*About Styles
+----------------------------------*/
+
+.about .bg {
+    background: url(../img/bg-about.jpg) fixed no-repeat;
+    background-position: 55% 32%;
+    border-left: 135px solid white;
+    border-top: 600px solid #ffff0000;
+}
+
+#down {
+    margin-top: 50px;
+}
+
+/*Work Styles
+---------------------------------------*/
+
+.work .row div {
+    padding: 0;
+    overflow: hidden;
+}
+
+.work div img {
+    transition: all .4s linear;
+
+
+}
+
+.work div img:hover {
+    transform: scale(1.5);
+    cursor: hand;
+}
+
+.work {
+    padding-bottom: 0;
+    margin-bottom: 60px;
+}
+
+/*Member
+---------------------------------------------*/
+
+.team h4,
+.team p {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.member {
+    text-align: center;
+    margin: 10px 15px;
+}
+
+.member p {
+    padding: 0;
+    margin: 5px;
+    color: #40a8f5;
+}
+
+.member a {
+    display: inline-block;
+    padding: 5px 10px 10px;
+    color: #2a2a2a;
+}
+
+.member a:hover {
+    color: #40a8f5;
+}
+
+.member img {
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/*Testimonials Styles
+--------------------------------------*/
+
+#test {
+    background: url(../img/bg-testimonials.jpg) fixed;
+    color: white;
+    text-align: center;
+}
+
+#test img {
+    width: 20%;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+#test .customer h5 {
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+
+@media (min-width:1000px) {
+    #test p {
+        border-left: 2px solid gray;
+
+    }
+}
+
+@media (min-width:768px) {
+    #test p {
+        width: 85%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+}
+
+
+#test p::before {
+    content: "\201c  "
+}
+
+#test p::after {
+    content: "  \201d"
+}
+
+/*Pricing Styles
+------------------------------*/
+
+.pricing {
+    text-align: center;
+}
+
+.pricing h4 {
+    margin: 30px 0;
+    font-size: 2.5rem;
+}
+
+.pricing h3 {
+    text-transform: uppercase;
+    ;
+    background: #40a8f5;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.list-price p {
+    margin: 12px auto;
+    border-bottom: 1px solid #40a8f5;
+    max-width: 50%;
+}
+
+.list-price p:last-of-type {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.pricing .price-item {
+    border: 2px solid #40a8f5;
+    padding: 30px 0;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+@media (min-width:770px) and (max-width:1000px) {
+    .list-price p {
+        max-width: 100%;
+    }
+}
+
+/*Statu styles
+---------------------------------------*/
+
+#stats {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-stats.jpg) fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+#stats h3 {
+    margin: 20px 0 10px;
+}
+
+#stats .col-md-3 {
+    margin: 10px 0;
+}
+
+#stats p {
+    text-transform: capitalize;
+}
+
+/*Contact Styles
+--------------------------------------*/
+
+.form-control {
+    margin: 30px 0;
+    background: #000000;
+    color: #fff;
+
+}
+
+#contact {
+    background: #000000;
+    padding: 30px 0;
+    color: #fff;
+}
+
+#contact h5 {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+#contact .contact-icon {
+    color: #fff;
+    display: inline-block;
+    margin: 10px 30px 0 0;
+
+}
+
+#contact .contact-icon:hover {
+    color: #40a8f5;
+}
+
+/*Footer Styles
+---------------------------------*/
+
+#footer {
+    text-align: center;
+    /*    padding: 30px 0;*/
+}
+
+#footer p {
+    margin: 30px auto;
+}
+
+#back-btn {
+    display: inline-block;
+    padding: 3px 12px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #40a8f5;
+    display: none;
+}
+
+#back-btn:hover {
+    background: #40a8f5;
+    color: #fff;
+}
+
+
+/*media quries
+----------------------------------*/
+
+@media (max-width:770px) {
+    #home h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .button {
+        border: 1.5px solid #fff;
+        padding: 8px 15px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+
+    #down {
+        margin-top: none;
+    }
+    #disappear {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        letter-spacing: .5px;
+    }
+
+    .services h3 {
+        font-size: 1.4rem;
+    }
+
+    .btn-gen {
+        border: 1.5px solid #40a8f5;
+        padding: 6px 12px;
+    }
+
+    #home {
+        padding: 30vh 0 25vh;
+        min-height: 70vh;
+    }
+
+    #test img {
+        width: 30%;
+    }
+    #contact-push {
+        margin-top: 30px;
+    }
+
+    .about .bg-short {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg) fixed no-repeat;
+
+        background-position: 30% 65%;
+        padding: 30px auto;
+        color: #ffffff;
+        width: 100%;
+
+    }
+
+    .down-short {
+        margin-bottom: 30px
+    }
+    .about-push {
+        padding-top: 30px;
+    }
+
+
+    #stats {
+        background-position: 60% 0%;
+
+    }
+
+
+}
