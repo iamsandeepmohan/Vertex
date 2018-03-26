@@ -1,4 +1,4 @@
-console.log("hello")
+
 
 $(document).ready(function () {
 
@@ -159,3 +159,12 @@ $(function () {
         }
     });
 });
+
+
+//loder
+
+var overlay = document.getElementById("overlay");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})
