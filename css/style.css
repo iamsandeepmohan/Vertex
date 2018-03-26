@@ -21,6 +21,8 @@ h4 {
     padding: 12px 25px;
     letter-spacing: 2px;
     font-weight: 500;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
     transition: all .3s ease-in;
 
 }
@@ -65,6 +67,8 @@ h2::after {
     border: 2px solid #40a8f5;
     text-transform: uppercase;
     padding: 8px 15px;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
     transition: all .3s ease-in;
 }
 
@@ -85,6 +89,8 @@ h2::after {
 ------------------------------------*/
 
 nav {
+    -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
 }
 
@@ -133,6 +139,9 @@ nav {
     padding: 35vh 0 30vh;
     color: #fff;
     min-height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/hero.jpg) fixed 50% no-repeat;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg) fixed 50% no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg) fixed 50% no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg) fixed 50% no-repeat;
     background-size: cover;
 }
@@ -141,10 +150,12 @@ nav {
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 40px;
+    -webkit-animation-delay: .8s;
     animation-delay: .8s;
 }
 
 #home a {
+    -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
 }
 
@@ -154,10 +165,19 @@ nav {
 
 #home .content {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     min-height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -196,12 +216,16 @@ nav {
 }
 
 .work div img {
+    -webkit-transition: all .4s linear;
+    -o-transition: all .4s linear;
     transition: all .4s linear;
 
 
 }
 
 .work div img:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
     transform: scale(1.5);
     cursor: hand;
 }
@@ -343,6 +367,9 @@ nav {
 ---------------------------------------*/
 
 #stats {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/bg-stats.jpg) fixed;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-stats.jpg) fixed;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-stats.jpg) fixed;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-stats.jpg) fixed;
     background-size: cover;
     color: #fff;
@@ -472,6 +499,9 @@ nav {
     }
 
     .about .bg-short {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/hero.jpg) fixed no-repeat;
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg) fixed no-repeat;
+        background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg) fixed no-repeat;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg) fixed no-repeat;
 
         background-position: 30% 65%;
